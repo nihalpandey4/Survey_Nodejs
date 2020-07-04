@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Survey</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/index.css">
+</head>
+
+<body>
+  <header>
+    <h1>Preview</h1>
+  </header>
+  <div class="container previewBox">
+
+    <div class="preview">
+      <h5>Email :</h5> <span style="text-align:center;"><%=info.email%></span>
+    </div>
+
+    <div class="preview">
+      <h5>Full Name :</h5> <span style="text-align:center;"><%=info.fullName%></span>
+    </div>
+
+    <div class="preview">
+      <h5>Email :</h5> <span style="text-align:center;"><%=info.Gender%></span>
+    </div>
+
+    <form class="" action="/preview" method="post">
+
+      <div class="form-group">
+        <label for="Choice" > <strong style="font-size:1.3rem;">Choose :</strong> </label>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="Choice" id="inlineRadio1" value="update" required>
+            <label class="form-check-label" for="inlineRadio1">Update Response</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="Choice" id="inlineRadio2" value="delete">
+            <label class="form-check-label" for="inlineRadio2">Delete Response</label>
+          </div>
+      </div>
+
+      <button type="submit" name="button" class="btn btn-primary">Submit</button>
+
+    </form>
+
+  </div>
+</body>
+
+</html>

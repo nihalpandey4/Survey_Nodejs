@@ -1,0 +1,56 @@
+*,*::after,*::before{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #abdaed;
+}
+
+header{
+  text-align: center;
+  margin-top: 2vh;
+}
+
+.container{
+  max-width: 700px;
+  margin-top: 5vh;
+  padding: 5vh 3vw;
+  background-color: white;
+  border-radius: 3rem;
+}
+
+.form-group > label::after{
+  content: "*";
+  color:red;
+  width: 30%;
+}
+
+.form-group{
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0 2rem 0;
+  align-items: center;
+}
+
+.form-group .form-control{
+  width: 70%;
+}
+
+form{
+  text-align: center;
+}
+
+.preview{
+  display: flex;
+
+  margin: 1rem 0;
+}
+.preview h5{
+  width:40%;
+}
+
+.previewBox{
+  max-width: 600px;
+}
